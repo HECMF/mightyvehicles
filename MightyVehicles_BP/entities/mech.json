@@ -65,8 +65,7 @@
                     {
                         "position": [0.0, 1.8, 0.0],
                         "min_rider_count": 0,
-                        "max_rider_count": 1,
-                        "lock_rider_rotation": 0
+                        "max_rider_count": 1
                     }
                 ]
             },

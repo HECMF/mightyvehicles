@@ -27,7 +27,7 @@
                 "can_path_over_water": true,
                 "can_path_over_lava": true,
                 "can_pass_doors": false,
-                "can_walk": true
+                "can_walk": false
             },
             "minecraft:damage_sensor": {
                 "triggers": [
@@ -43,13 +43,12 @@
                 "interact_text": "action.interact.ride",
                 "seats": [
                     {
-                        "position": [0.0, 1.0, 1.6],
+                        "position": [0.0, 1.0, 2.0],
                         "min_rider_count": 0,
-                        "max_rider_count": 2,
-                        "lock_rider_rotation": 0
+                        "max_rider_count": 2
                     },
                     {
-                        "position": [0.0, 1.0, -1.6],
+                        "position": [0.0, 1.0, -1.2],
                         "min_rider_count": 1,
                         "max_rider_count": 2
                     }
@@ -74,8 +73,8 @@
             "minecraft:experience_reward": {
                 "on_death": "query.last_hit_by_player ? 5 : 0"
             },
-            "minecraft:behavior.float": {
-                "priority": 0
+            "minecraft:gravity": {
+                "value": 0.0
             }
         }
     }
