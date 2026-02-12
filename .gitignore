@@ -1,0 +1,27 @@
+# Build artifacts
+*.mcpack
+*.mcaddon
+*.mcworld
+*.mctemplate
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# Editor / IDE
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Node.js (if using Script API with TypeScript)
+node_modules/
+dist/
+build/
+package-lock.json
+
+# Logs
+*.log

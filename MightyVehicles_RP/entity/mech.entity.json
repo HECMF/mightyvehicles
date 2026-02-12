@@ -1,0 +1,35 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "mighty:mech",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/mech"
+            },
+            "geometry": {
+                "default": "geometry.mech"
+            },
+            "render_controllers": [
+                "controller.render.mighty_mobs"
+            ],
+            "animations": {
+                "idle": "animation.mech.idle",
+                "walk": "animation.mech.walk",
+                "attack": "animation.mech.attack",
+                "controller": "controller.animation.mech"
+            },
+            "scripts": {
+                "animate": [
+                    "controller"
+                ]
+            },
+            "spawn_egg": {
+                "base_color": "#444444",
+                "overlay_color": "#CC0000"
+            }
+        }
+    }
+}

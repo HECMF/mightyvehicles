@@ -1,0 +1,22 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.auto": {
+            "initial_state": "idle",
+            "states": {
+                "idle": {
+                    "animations": ["idle"],
+                    "transitions": [
+                        {"driving": "query.modified_move_speed > 0.1"}
+                    ]
+                },
+                "driving": {
+                    "animations": ["drive"],
+                    "transitions": [
+                        {"idle": "query.modified_move_speed <= 0.1"}
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,189 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:geometry": [
+        {
+            "description": {
+                "identifier": "geometry.auto",
+                "texture_width": 128,
+                "texture_height": 128,
+                "visible_bounds_width": 4,
+                "visible_bounds_height": 3,
+                "visible_bounds_offset": [0, 0.75, 0]
+            },
+            "bones": [
+                {
+                    "name": "root",
+                    "pivot": [0, 0, 0]
+                },
+                {
+                    "name": "body",
+                    "parent": "root",
+                    "pivot": [0, 4, 0],
+                    "cubes": [
+                        {
+                            "origin": [-7, 3, -10],
+                            "size": [14, 6, 20],
+                            "uv": [0, 0]
+                        }
+                    ]
+                },
+                {
+                    "name": "roof",
+                    "parent": "body",
+                    "pivot": [0, 9, -1],
+                    "cubes": [
+                        {
+                            "origin": [-6, 9, -5],
+                            "size": [12, 5, 14],
+                            "uv": [0, 26]
+                        }
+                    ]
+                },
+                {
+                    "name": "windshield",
+                    "parent": "body",
+                    "pivot": [0, 9, -5],
+                    "cubes": [
+                        {
+                            "origin": [-5.5, 9, -6],
+                            "size": [11, 4, 1],
+                            "uv": [0, 46]
+                        }
+                    ]
+                },
+                {
+                    "name": "rear_window",
+                    "parent": "body",
+                    "pivot": [0, 9, 9],
+                    "cubes": [
+                        {
+                            "origin": [-5.5, 9, 9],
+                            "size": [11, 4, 1],
+                            "uv": [0, 52]
+                        }
+                    ]
+                },
+                {
+                    "name": "hood",
+                    "parent": "body",
+                    "pivot": [0, 9, -7],
+                    "cubes": [
+                        {
+                            "origin": [-6, 8.5, -10],
+                            "size": [12, 1, 5],
+                            "uv": [0, 58]
+                        }
+                    ]
+                },
+                {
+                    "name": "trunk",
+                    "parent": "body",
+                    "pivot": [0, 9, 8],
+                    "cubes": [
+                        {
+                            "origin": [-6, 8.5, 8],
+                            "size": [12, 1, 2],
+                            "uv": [0, 65]
+                        }
+                    ]
+                },
+                {
+                    "name": "wheel_fl",
+                    "parent": "body",
+                    "pivot": [-7, 2.5, -6],
+                    "cubes": [
+                        {
+                            "origin": [-9, 0.5, -8],
+                            "size": [2, 4, 4],
+                            "uv": [48, 0]
+                        }
+                    ]
+                },
+                {
+                    "name": "wheel_fr",
+                    "parent": "body",
+                    "pivot": [7, 2.5, -6],
+                    "cubes": [
+                        {
+                            "origin": [7, 0.5, -8],
+                            "size": [2, 4, 4],
+                            "uv": [48, 8]
+                        }
+                    ]
+                },
+                {
+                    "name": "wheel_rl",
+                    "parent": "body",
+                    "pivot": [-7, 2.5, 6],
+                    "cubes": [
+                        {
+                            "origin": [-9, 0.5, 4],
+                            "size": [2, 4, 4],
+                            "uv": [48, 16]
+                        }
+                    ]
+                },
+                {
+                    "name": "wheel_rr",
+                    "parent": "body",
+                    "pivot": [7, 2.5, 6],
+                    "cubes": [
+                        {
+                            "origin": [7, 0.5, 4],
+                            "size": [2, 4, 4],
+                            "uv": [48, 24]
+                        }
+                    ]
+                },
+                {
+                    "name": "headlight_left",
+                    "parent": "body",
+                    "pivot": [-4, 6, -10],
+                    "cubes": [
+                        {
+                            "origin": [-5, 5, -10.5],
+                            "size": [2, 2, 1],
+                            "uv": [60, 0]
+                        }
+                    ]
+                },
+                {
+                    "name": "headlight_right",
+                    "parent": "body",
+                    "pivot": [4, 6, -10],
+                    "cubes": [
+                        {
+                            "origin": [3, 5, -10.5],
+                            "size": [2, 2, 1],
+                            "uv": [60, 4]
+                        }
+                    ]
+                },
+                {
+                    "name": "bumper_front",
+                    "parent": "body",
+                    "pivot": [0, 3, -10],
+                    "cubes": [
+                        {
+                            "origin": [-7, 2.5, -11],
+                            "size": [14, 2, 1],
+                            "uv": [60, 8]
+                        }
+                    ]
+                },
+                {
+                    "name": "bumper_rear",
+                    "parent": "body",
+                    "pivot": [0, 3, 10],
+                    "cubes": [
+                        {
+                            "origin": [-7, 2.5, 10],
+                            "size": [14, 2, 1],
+                            "uv": [60, 12]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

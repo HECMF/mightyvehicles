@@ -1,0 +1,171 @@
+{
+    "format_version": "1.21.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "mighty:mech",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "component_groups": {
+            "mighty:mech_ridden": {
+                "minecraft:behavior.float": {
+                    "priority": 0
+                }
+            },
+            "mighty:mech_free": {
+                "minecraft:attack": {
+                    "damage": 15
+                },
+                "minecraft:behavior.melee_attack": {
+                    "priority": 3,
+                    "speed_multiplier": 1.0,
+                    "track_target": true
+                },
+                "minecraft:behavior.nearest_attackable_target": {
+                    "priority": 2,
+                    "within_radius": 20.0,
+                    "reselect_targets": true,
+                    "entity_types": [
+                        {
+                            "filters": {
+                                "test": "is_family",
+                                "subject": "other",
+                                "value": "monster"
+                            },
+                            "max_dist": 20
+                        }
+                    ]
+                },
+                "minecraft:behavior.hurt_by_target": {
+                    "priority": 1
+                },
+                "minecraft:behavior.random_stroll": {
+                    "priority": 6,
+                    "speed_multiplier": 0.6
+                },
+                "minecraft:behavior.look_at_player": {
+                    "priority": 7,
+                    "look_distance": 8.0
+                },
+                "minecraft:behavior.random_look_around": {
+                    "priority": 8
+                }
+            }
+        },
+        "components": {
+            "minecraft:type_family": {
+                "family": ["vehicle", "mighty_vehicle"]
+            },
+            "minecraft:health": {
+                "value": 150,
+                "max": 150
+            },
+            "minecraft:movement": {
+                "value": 0.2
+            },
+            "minecraft:movement.basic": {},
+            "minecraft:navigation.walk": {
+                "can_path_over_water": false,
+                "avoid_water": true,
+                "can_pass_doors": false,
+                "can_walk": true
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "cause": "fall",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "entity_explosion",
+                        "deals_damage": false
+                    },
+                    {
+                        "cause": "block_explosion",
+                        "deals_damage": false
+                    }
+                ]
+            },
+            "minecraft:rideable": {
+                "seat_count": 1,
+                "family_types": ["player"],
+                "interact_text": "action.interact.ride",
+                "seats": [
+                    {
+                        "position": [0.0, 2.8, 0.0],
+                        "min_rider_count": 0,
+                        "max_rider_count": 1,
+                        "lock_rider_rotation": 0
+                    }
+                ]
+            },
+            "minecraft:input_ground_controlled": {},
+            "minecraft:physics": {},
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:collision_box": {
+                "width": 1.4,
+                "height": 3.0
+            },
+            "minecraft:scale": {
+                "value": 2.0
+            },
+            "minecraft:knockback_resistance": {
+                "value": 0.8
+            },
+            "minecraft:loot": {
+                "table": "loot_tables/entities/mech.json"
+            },
+            "minecraft:experience_reward": {
+                "on_death": "query.last_hit_by_player ? 10 : 0"
+            },
+            "minecraft:behavior.float": {
+                "priority": 0
+            },
+            "minecraft:entity_sensor": {
+                "sensor_range": 0.5,
+                "relative_range": false,
+                "minimum_count": 1,
+                "event_filters": {
+                    "test": "has_component",
+                    "value": "minecraft:rideable"
+                },
+                "event": "mighty:check_rider"
+            }
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "add": {
+                    "component_groups": ["mighty:mech_free"]
+                }
+            },
+            "minecraft:on_saddled": {
+                "remove": {
+                    "component_groups": ["mighty:mech_free"]
+                },
+                "add": {
+                    "component_groups": ["mighty:mech_ridden"]
+                }
+            },
+            "mighty:rider_mounted": {
+                "remove": {
+                    "component_groups": ["mighty:mech_free"]
+                },
+                "add": {
+                    "component_groups": ["mighty:mech_ridden"]
+                }
+            },
+            "mighty:rider_dismounted": {
+                "remove": {
+                    "component_groups": ["mighty:mech_ridden"]
+                },
+                "add": {
+                    "component_groups": ["mighty:mech_free"]
+                }
+            }
+        }
+    }
+}

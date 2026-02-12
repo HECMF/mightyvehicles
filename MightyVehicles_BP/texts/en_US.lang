@@ -1,0 +1,16 @@
+## Mighty Vehicles - Behavior Pack Translations
+
+pack.name=Mighty Vehicles Behavior Pack
+pack.description=Behavior Pack for Mighty Vehicles - adds craftable vehicles
+
+## Entity Names
+entity.mighty:auto.name=Auto
+entity.mighty:flugzeug.name=Flugzeug
+entity.mighty:mech.name=Mech
+entity.mighty:boot.name=Boot
+
+## Spawn Eggs
+item.spawn_egg.entity.mighty:auto.name=Spawn Auto
+item.spawn_egg.entity.mighty:flugzeug.name=Spawn Flugzeug
+item.spawn_egg.entity.mighty:mech.name=Spawn Mech
+item.spawn_egg.entity.mighty:boot.name=Spawn Boot

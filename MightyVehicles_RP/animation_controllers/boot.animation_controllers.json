@@ -1,0 +1,22 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.boot": {
+            "initial_state": "idle",
+            "states": {
+                "idle": {
+                    "animations": ["idle"],
+                    "transitions": [
+                        {"sailing": "query.modified_move_speed > 0.1"}
+                    ]
+                },
+                "sailing": {
+                    "animations": ["sail"],
+                    "transitions": [
+                        {"idle": "query.modified_move_speed <= 0.1"}
+                    ]
+                }
+            }
+        }
+    }
+}

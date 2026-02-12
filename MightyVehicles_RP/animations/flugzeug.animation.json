@@ -1,0 +1,49 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+        "animation.flugzeug.idle": {
+            "loop": true,
+            "animation_length": 2.0,
+            "bones": {
+                "fuselage": {
+                    "position": {
+                        "0.0": [0, 0, 0],
+                        "1.0": [0, 0.2, 0],
+                        "2.0": [0, 0, 0]
+                    }
+                }
+            }
+        },
+        "animation.flugzeug.fly": {
+            "loop": true,
+            "animation_length": 2.0,
+            "bones": {
+                "left_wing": {
+                    "rotation": {
+                        "0.0": [0, 0, -3],
+                        "0.5": [0, 0, 3],
+                        "1.0": [0, 0, -3],
+                        "1.5": [0, 0, 3],
+                        "2.0": [0, 0, -3]
+                    }
+                },
+                "right_wing": {
+                    "rotation": {
+                        "0.0": [0, 0, 3],
+                        "0.5": [0, 0, -3],
+                        "1.0": [0, 0, 3],
+                        "1.5": [0, 0, -3],
+                        "2.0": [0, 0, 3]
+                    }
+                },
+                "fuselage": {
+                    "rotation": {
+                        "0.0": [-5, 0, 0],
+                        "1.0": [-3, 0, 0],
+                        "2.0": [-5, 0, 0]
+                    }
+                }
+            }
+        }
+    }
+}

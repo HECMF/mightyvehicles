@@ -1,0 +1,34 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "mighty:boot",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/boot"
+            },
+            "geometry": {
+                "default": "geometry.boot"
+            },
+            "render_controllers": [
+                "controller.render.mighty_mobs"
+            ],
+            "animations": {
+                "idle": "animation.boot.idle",
+                "sail": "animation.boot.sail",
+                "controller": "controller.animation.boot"
+            },
+            "scripts": {
+                "animate": [
+                    "controller"
+                ]
+            },
+            "spawn_egg": {
+                "base_color": "#8B6914",
+                "overlay_color": "#FFFFFF"
+            }
+        }
+    }
+}

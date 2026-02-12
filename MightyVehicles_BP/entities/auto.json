@@ -1,0 +1,88 @@
+{
+    "format_version": "1.21.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "mighty:auto",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "components": {
+            "minecraft:type_family": {
+                "family": ["vehicle", "mighty_vehicle"]
+            },
+            "minecraft:health": {
+                "value": 80,
+                "max": 80
+            },
+            "minecraft:movement": {
+                "value": 0.4
+            },
+            "minecraft:movement.basic": {},
+            "minecraft:navigation.walk": {
+                "can_path_over_water": false,
+                "avoid_water": true,
+                "can_pass_doors": false,
+                "can_walk": true
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "cause": "fall",
+                        "deals_damage": false
+                    }
+                ]
+            },
+            "minecraft:rideable": {
+                "seat_count": 4,
+                "family_types": ["player"],
+                "interact_text": "action.interact.ride",
+                "seats": [
+                    {
+                        "position": [-0.4, 1.0, 0.5],
+                        "min_rider_count": 0,
+                        "max_rider_count": 4,
+                        "lock_rider_rotation": 0
+                    },
+                    {
+                        "position": [0.4, 1.0, 0.5],
+                        "min_rider_count": 1,
+                        "max_rider_count": 4
+                    },
+                    {
+                        "position": [-0.4, 1.0, -0.5],
+                        "min_rider_count": 2,
+                        "max_rider_count": 4
+                    },
+                    {
+                        "position": [0.4, 1.0, -0.5],
+                        "min_rider_count": 3,
+                        "max_rider_count": 4
+                    }
+                ]
+            },
+            "minecraft:input_ground_controlled": {},
+            "minecraft:physics": {},
+            "minecraft:pushable": {
+                "is_pushable": true,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:collision_box": {
+                "width": 1.8,
+                "height": 1.2
+            },
+            "minecraft:scale": {
+                "value": 1.2
+            },
+            "minecraft:loot": {
+                "table": "loot_tables/entities/auto.json"
+            },
+            "minecraft:experience_reward": {
+                "on_death": "query.last_hit_by_player ? 5 : 0"
+            },
+            "minecraft:behavior.float": {
+                "priority": 0
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+## Mighty Vehicles - Resource Pack Translations
+
+pack.name=Mighty Vehicles Resource Pack
+pack.description=Resource Pack for Mighty Vehicles - custom models, textures and animations for vehicles
+
+## Entity Names
+entity.mighty:auto.name=Auto
+entity.mighty:flugzeug.name=Flugzeug
+entity.mighty:mech.name=Mech
+entity.mighty:boot.name=Boot
+
+## Spawn Eggs
+item.spawn_egg.entity.mighty:auto.name=Spawn Auto
+item.spawn_egg.entity.mighty:flugzeug.name=Spawn Flugzeug
+item.spawn_egg.entity.mighty:mech.name=Spawn Mech
+item.spawn_egg.entity.mighty:boot.name=Spawn Boot
