@@ -22,13 +22,6 @@
             "minecraft:underwater_movement": {
                 "value": 0.15
             },
-            "minecraft:navigation.walk": {
-                "can_path_over_water": true,
-                "avoid_water": false,
-                "can_swim": true,
-                "can_pass_doors": false,
-                "can_walk": true
-            },
             "minecraft:buoyant": {
                 "base_buoyancy": 1.0,
                 "apply_gravity": true,
@@ -53,23 +46,23 @@
                 "interact_text": "action.interact.ride",
                 "seats": [
                     {
-                        "position": [0.0, 0.6, -3.0],
+                        "position": [0.0, 0.6, -1.0],
                         "min_rider_count": 0,
                         "max_rider_count": 4,
                         "lock_rider_rotation": 0
                     },
                     {
-                        "position": [-1.0, 0.6, 0.0],
+                        "position": [-1.0, 0.6, 0.5],
                         "min_rider_count": 1,
                         "max_rider_count": 4
                     },
                     {
-                        "position": [1.0, 0.6, 0.0],
+                        "position": [1.0, 0.6, 0.5],
                         "min_rider_count": 2,
                         "max_rider_count": 4
                     },
                     {
-                        "position": [0.0, 0.6, 2.0],
+                        "position": [0.0, 0.6, 1.5],
                         "min_rider_count": 3,
                         "max_rider_count": 4
                     }
@@ -94,8 +87,13 @@
             "minecraft:experience_reward": {
                 "on_death": "query.last_hit_by_player ? 5 : 0"
             },
-            "minecraft:behavior.float": {
-                "priority": 0
+            "minecraft:navigation.walk": {
+                "can_path_over_water": true,
+                "avoid_water": false,
+                "avoid_damage_blocks": true,
+                "can_swim": true,
+                "can_pass_doors": false,
+                "can_walk": false
             }
         }
     }
