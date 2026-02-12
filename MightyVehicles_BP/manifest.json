@@ -2,9 +2,9 @@
     "format_version": 2,
     "header": {
         "name": "Mighty Vehicles Behavior Pack",
-        "description": "Mighty Vehicles v1.0.3 - Erlebe die ultimativen Fahrzeuge! Baue, fahre & fliege!",
+        "description": "Mighty Vehicles v1.0.6 - Erlebe die ultimativen Fahrzeuge! Baue, fahre & fliege!",
         "uuid": "64fde41a-4baf-48a8-8db4-8dbe6a6c47ef",
-        "version": [1, 0, 3],
+        "version": [1, 0, 6],
         "min_engine_version": [1, 21, 0]
     },
     "modules": [
@@ -12,13 +12,13 @@
             "description": "Mighty Vehicles - Verhaltensdaten fuer epische Fahrzeuge",
             "type": "data",
             "uuid": "85f3ca8c-1fd8-4506-a655-ab98ede22ef2",
-            "version": [1, 0, 3]
+            "version": [1, 0, 6]
         }
     ],
     "dependencies": [
         {
             "uuid": "8c004d5c-983f-4336-b8e1-357f80003815",
-            "version": [1, 0, 3]
+            "version": [1, 0, 6]
         }
     ]
 }

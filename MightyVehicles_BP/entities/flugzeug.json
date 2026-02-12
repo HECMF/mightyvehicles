@@ -43,12 +43,12 @@
                 "interact_text": "action.interact.ride",
                 "seats": [
                     {
-                        "position": [0.0, 1.0, 2.0],
+                        "position": [0.0, 1.0, 0.5],
                         "min_rider_count": 0,
                         "max_rider_count": 2
                     },
                     {
-                        "position": [0.0, 1.0, -1.2],
+                        "position": [0.0, 1.0, -0.5],
                         "min_rider_count": 1,
                         "max_rider_count": 2
                     }
