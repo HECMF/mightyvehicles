@@ -43,13 +43,13 @@
                 "interact_text": "action.interact.ride",
                 "seats": [
                     {
-                        "position": [0.0, 1.2, 0.8],
+                        "position": [0.0, 2.4, 1.6],
                         "min_rider_count": 0,
                         "max_rider_count": 2,
                         "lock_rider_rotation": 0
                     },
                     {
-                        "position": [0.0, 1.2, -0.8],
+                        "position": [0.0, 2.4, -1.6],
                         "min_rider_count": 1,
                         "max_rider_count": 2
                     }
@@ -62,11 +62,11 @@
                 "is_pushable_by_piston": true
             },
             "minecraft:collision_box": {
-                "width": 1.2,
-                "height": 1.0
+                "width": 2.4,
+                "height": 2.0
             },
             "minecraft:scale": {
-                "value": 1.5
+                "value": 3.0
             },
             "minecraft:loot": {
                 "table": "loot_tables/entities/flugzeug.json"
